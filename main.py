@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas
+import numpy as np
 
 data = {
   "Series_1":[1,3,4,5,7], 
@@ -21,3 +22,9 @@ st.write(myslider, "in Fahrenheit is", myslider * 9/5 + 32)
 
 km_slider = st.slider("Km")
 st.write(km_slider, "in Miles is", km_slider / 1.609)
+
+map_data = pandas.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [48.71, 21.25],
+    columns=['lat', 'lon'])
+
+st.map(map_data)
