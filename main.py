@@ -18,3 +18,6 @@ st.line_chart(df)
 st.area_chart(df)
 myslider = st.slider("Celsius")
 st.write(myslider, "in Fahrenheit is", myslider * 9/5 + 32)
+
+km_slider = st.slider("Km")
+st.write(km_slider, "in Miles is", km_slider / 1.609)
