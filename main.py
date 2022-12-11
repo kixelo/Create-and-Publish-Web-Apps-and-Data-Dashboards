@@ -23,6 +23,9 @@ st.write(myslider, "in Fahrenheit is", myslider * 9/5 + 32)
 km_slider = st.slider("Km")
 st.write(km_slider, "in Miles is", km_slider / 1.609)
 
+btc_slider = st.slider("BTC")
+st.write(btc_slider, "in Euro is", btc_slider * 16268)
+
 map_data = pandas.DataFrame(
     np.random.randn(1000, 2) / [50, 50] + [48.71, 21.25],
     columns=['lat', 'lon'])
